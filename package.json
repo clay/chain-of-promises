@@ -1,6 +1,6 @@
 {
   "name": "chain-of-promises",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Run through a list of functions sequentially, returning the first one that resolves",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
