@@ -1,0 +1,49 @@
+{
+  "name": "chain-of-promises",
+  "version": "0.0.1",
+  "description": "Run through a list of functions sequentially, returning the first one that resolves",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register test.js",
+    "build": "rimraf dist && mkdirp dist && babel src --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelsonpecora/chain-of-promises.git"
+  },
+  "keywords": [
+    "promises",
+    "chain-of-responsibility"
+  ],
+  "author": "Nelson Pecora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nelsonpecora/chain-of-promises/issues"
+  },
+  "homepage": "https://github.com/nelsonpecora/chain-of-promises#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.11.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-register": "^6.11.6",
+    "chai": "^3.5.0",
+    "mkdirp": "^0.5.1",
+    "mocha": "^3.0.2",
+    "rimraf": "^2.5.4"
+  }
+}
