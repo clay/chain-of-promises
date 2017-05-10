@@ -1,4 +1,6 @@
 # chain-of-promises
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nelsonpecora/chain-of-promises.svg)](https://greenkeeper.io/)
 Run through a list of functions sequentially, returning the first one that resolves
 
 The [Chain of Responsibility](https://sourcemaking.com/design_patterns/chain_of_responsibility) pattern is very useful when passing something into a list of "processing elements," but it isn't the most intuitive when using promises to do api calls. This library introduces a similar pattern I'm calling "reject quickly/resolve slowly," in which each "processing element" should reject if it doesn't match and resolve if it does.
